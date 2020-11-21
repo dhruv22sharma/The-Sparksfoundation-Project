@@ -1,0 +1,39 @@
+.Form-containers{
+    text-align: center;
+    margin: 1rem 3rem;
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+}
+.Form-containers h1{
+    margin: 1rem 0rem;
+}
+.Form-containers input{
+    width: 20rem;
+    padding: 0.5rem 0.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+.Inp_add{
+    margin-top: 0.5rem;
+}
+.Inp_adds-ab{
+    margin-bottom: 1rem;
+}
+.Form-containers button{
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #40bf40;
+    color: white;
+    font-size: 1.5rem;
+}
+.Form-containers img{
+    border-radius: 1rem;
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+}

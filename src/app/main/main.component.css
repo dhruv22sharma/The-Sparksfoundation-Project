@@ -1,0 +1,26 @@
+.main{
+    display: flex;
+    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem 1rem;
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    justify-content: space-around;
+}
+.main div{
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    outline: none;
+}
+.main div:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}
+.main div img{
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 0.5rem;
+    background-color: none;
+}

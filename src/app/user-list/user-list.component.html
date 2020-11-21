@@ -1,0 +1,8 @@
+<div class="User-container">
+    <div class="User-block"  *ngFor="let user of users" (click)="handleprofile(this.user)" >
+        <img src="../../assets/Coustomer_main.png" alt="Profile">
+        <span><p><b>Name:</b></p><p>{{ user.name }}</p></span>
+        <span><p><b>Account No.:</b></p><p>{{ user.Accountno }}</p></span>
+        <span><p><b>Phone No.:</b></p><p>{{ user.phoneno }}</p></span>
+    </div>
+</div>

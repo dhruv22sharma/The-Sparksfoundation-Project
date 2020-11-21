@@ -1,0 +1,34 @@
+<div>
+    {{isDataAvialable}};
+</div>
+<div class="Profile-container" *ngIf="isDataAvialable">
+    <div class="Profile">
+        <img src="../../assets/Coustomer_main.png" alt="">
+        <span><p>Name:</p><p>{{userData.name}}</p></span>
+        <span><p>Phone No.:</p><p>{{userData.phoneno}}</p></span>
+        <span><p>Email:</p><p>{{userData.email}}</p></span>
+        <span><p>Account:</p><p>{{userData.Accountno}}</p></span>
+        <div class="Adrs">
+            <span>Adress: {{userData.address}}</span>
+            <span>Area: {{userData.Area}}</span>
+            <span>City: {{userData.city}}</span>
+            <span>PIN code: {{userData.pincode}}</span>
+        </div>
+    </div>
+    <div class="Details">
+        <span id="Avial"><p>Available:</p><p>{{userData.bal }}</p></span>
+        <form >
+            <input type="number" #amount placeholder="Amount to be transfered" required><br>
+            <select class="select-recv" #reciver required>
+                <option value="None" disabled selected>Select user to send Money</option>
+                <option *ngFor="let i of userslist" [value]="i.name" >{{i.name}}</option>
+            </select><br>
+            <button (click)="submithandler(amount.value,reciver.value)" routerLink="/Trsanction-details">PAY</button>
+        </form>
+        <form >
+            <input type="number" placeholder="Deposit Money"><br>
+            <button routerLink="/Trsanction-details">PAY</button>
+        </form>
+    </div>
+</div>
+

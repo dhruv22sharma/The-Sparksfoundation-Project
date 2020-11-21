@@ -1,0 +1,92 @@
+.Profile-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 1rem;
+    margin: 1rem 3rem;
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+}
+.Profile{
+
+    padding: 2rem 2rem;
+    text-align: center;
+}
+.Profile span{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    background-color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+}
+.Profile span p{
+    margin-right: 0.5rem;
+}
+.Adrs{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    margin-top: 0.5rem;
+}
+.Adrs span{
+    padding: 0rem;
+    margin-top: 0rem;
+}
+.Profile img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+.Details{
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: auto;
+    margin-block-start: auto;
+}
+#Avial{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    background-color: #ffbf80;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+}
+.Details form input{
+    padding: 0.5rem 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    width: 20rem;
+    margin-bottom: 0.5rem;
+}
+/* Chrome, Safari, Edge, Opera */
+.Details form input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.Details form  input[type=number] {
+  -moz-appearance: textfield;
+  margin-top: 0.5rem;
+}
+.Details button{
+    padding: 0.5rem 1rem ;
+    border: none;
+    background-color: #99e699;
+    border-radius: 0.3rem;
+}
+.select-recv{
+    padding: 0.5rem 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    width: 20rem;
+    margin-bottom: 0.5rem;   
+}
+.Details form{
+    margin-bottom: 1rem;
+}
