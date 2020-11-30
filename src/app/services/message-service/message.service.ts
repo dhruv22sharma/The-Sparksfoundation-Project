@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { User } from '../../Models/Users-Models';
-import { Subject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class MessageService {
-  subject = new Subject();
+  subject = new BehaviorSubject(null);
   constructor() {}
 
   sendMsg(user: User) {

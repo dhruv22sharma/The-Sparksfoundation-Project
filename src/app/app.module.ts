@@ -11,6 +11,7 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NewUserSucessfulComponent } from './new-user-sucessful/new-user-sucessful.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
     TransctionListComponent,
     NewUserComponent,
     UserListComponent,
+    NewUserSucessfulComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

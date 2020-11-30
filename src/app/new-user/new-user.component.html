@@ -2,14 +2,15 @@
     <h1>Create New User</h1>
     <img src="../../assets/add_coustomer_main.png" alt="add_coustomer">
     <form>
-        <input type="text" placeholder="User Name" required><br>
-        <input type="number" placeholder="Phone Number" required><br>
-        <input type="email" placeholder="E-Mail" required><br>
-        <input type="text" placeholder="Adress" required ><br>
-        <input type="text" placeholder="Area" required><br>
-        <input type="text" placeholder="City" required><br>
-        <input type="Number" placeholder="PIN code" required><br>
-        <input type="number" placeholder="Deposit Money" required><br>
-        <button>Create User</button>
+        <input #uname type="text" placeholder="User Name" required><br>
+        <input #phno type="number" placeholder="Phone Number" required><br>
+        <input #accno type="number" placeholder="Account Number(16-digits)" required><br>
+        <input #email type="email" placeholder="E-Mail" required><br>
+        <input #add type="text" placeholder="Adress" required ><br>
+        <input #area type="text" placeholder="Area" required><br>
+        <input #city type="text" placeholder="City" required><br>
+        <input #pin type="Number" placeholder="PIN code" required><br>
+        <input #money type="number" placeholder="Deposit Money" required><br>
+        <button (click)="newuserhandle(uname.value,phno.value,accno.value,email.value,add.value,area.value,city.value,pin.value,money.value)">Create User</button>
     </form>
 </div>

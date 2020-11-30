@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { User } from '../Models/Users-Models';
 import { MessageService } from '../services/message-service/message.service';
 import { Router } from '@angular/router';
-import { UserListService } from '../services/user-list-service/user-list.service';
 import { UserDataRenderService } from '../services/user-data-render/user-data-render.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-user-list',
@@ -71,14 +69,15 @@ export class UserListComponent implements OnInit {
   ];
   constructor(
     private msg: MessageService,
-    private msglist: UserListService,
     private router: Router,
     private userlist: UserDataRenderService
   ) {}
 
   ngOnInit() {
-    /*this.users$ = this.userlist.getUsers();*/
-    this.msglist.sendMsglist(this.users);
+    this.userlist.getUsers().subscribe((data) => {
+      this.users = data;
+      console.log(this.users);
+    });
   }
   handleprofile(user: User) {
     this.msg.sendMsg(user);

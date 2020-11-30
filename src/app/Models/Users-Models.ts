@@ -1,6 +1,6 @@
 export class User {
-  uid: number;
-  name: string;
+  id: number;
+  Uname: string;
   phoneno: number;
   email: string;
   address: string;
@@ -20,8 +20,8 @@ export class User {
     pincode: number,
     bal: number
   ) {
-    this.uid = uid;
-    this.name = name;
+    this.id = uid;
+    this.Uname = name;
     this.phoneno = phoneno;
     this.email = email;
     this.address = address;

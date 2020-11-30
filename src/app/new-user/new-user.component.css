@@ -15,6 +15,18 @@
     border: none;
     border-radius: 0.3rem;
 }
+/* Chrome, Safari, Edge, Opera */
+.Details form input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.Details form  input[type=number] {
+  -moz-appearance: textfield;
+  margin-top: 0.5rem;
+}
 .Inp_add{
     margin-top: 0.5rem;
 }

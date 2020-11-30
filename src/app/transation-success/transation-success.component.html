@@ -3,11 +3,11 @@
     <img src="../../assets/checkmark.gif" alt="Transaction Success!">
     <hr>
     <div class="Details-trans">
-        <span><p><b>Amount</b></p><p>200.00</p></span>
-        <span><p><b>Payed By</b></p><p>Coustomer 1</p></span>
-        <span><p><b>Payed To</b></p><p>Coustomer 2</p></span>
+        <span><p><b>Amount</b></p><p>{{tdetails.amount}}</p></span>
+        <span><p><b>Payed By</b></p><p>{{tdetails.sender}}</p></span>
+        <span><p><b>Payed To</b></p><p>{{tdetails.reciver}}</p></span>
         <span><p><b>Transcation Id</b></p><p>10001</p></span>
-        <span><p><b>Date:</b></p><p>10-11-2020</p></span>
+        <span><p><b>Date:</b></p><p>{{tdetails.date}}</p></span>
     </div>
     <button routerLink="/Transction-list">All Transactions list</button>
 </div>

@@ -7,7 +7,7 @@ import { TransactionDetialsService } from '../services/transactions-details-serv
   styleUrls: ['./transation-success.component.css'],
 })
 export class TransationSuccessComponent implements OnInit {
-  tdetails: transactions = new transactions('', '', 0);
+  tdetails: transactions = new transactions(0, '', '', 0, new Date());
   constructor(private transaction: TransactionDetialsService) {}
 
   ngOnInit(): void {

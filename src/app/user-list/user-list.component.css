@@ -1,6 +1,8 @@
 .User-container{
     margin: 1rem 1rem;
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 .User-block{
     padding: 2rem 1rem;

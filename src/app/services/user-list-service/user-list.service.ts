@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { User } from '../../Models/Users-Models';
-import { Observable, Subject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class UserListService {
-  subject = new Subject();
+  subject = new BehaviorSubject(null);
   constructor() {}
 
   sendMsglist(users: User[]) {
